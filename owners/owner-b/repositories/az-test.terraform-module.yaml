@@ -1,0 +1,20 @@
+url: ssh://git@domain.com:7999/ER/az-test.git
+mainline: master
+generator: az-module
+unittest: false
+configuration:
+    accessKeys:
+        - key: SOME_KEY
+          permission: REPO_WRITE
+    commitMessageType: SEMANTIC
+    requireIssue: true
+    requireSuccessfulBuilds: 0
+    webhooks:
+        pipelineTrigger: true
+    approvers:
+        test-owner-b:
+            - somebody
+            - some-user
+            - some-other-user
+        test-group-c:
+            - somebody

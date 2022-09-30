@@ -1,0 +1,18 @@
+url: ssh://git@domain.com:7999/ER/some-test-service-c-deployment.git
+mainline: main
+generator: helm-deployment-repository
+unittest: false
+configuration:
+    accessKeys:
+        - key: SOME_KEY
+          permission: REPO_WRITE
+        - key: DEPLOYMENT
+          permission: REPO_READ
+    commitMessageType: DEFAULT
+    requireIssue: true
+    requireSuccessfulBuilds: 1
+    webhooks:
+        pipelineTrigger: true
+    approvers:
+        test-owner-a:
+            - somebody

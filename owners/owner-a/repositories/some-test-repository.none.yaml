@@ -1,0 +1,16 @@
+url: ssh://git@domain.com:7999/ER/some-test-repository.git
+mainline: master
+generator: empty
+unittest: false
+configuration:
+    accessKeys:
+        - key: SOME_KEY
+          permission: REPO_WRITE
+    commitMessageType: DEFAULT
+    requireIssue: true
+    requireSuccessfulBuilds: 1
+    webhooks:
+        pipelineTrigger: true
+    approvers:
+        test-owner-a:
+            - somebody

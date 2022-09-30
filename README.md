@@ -1,2 +1,3 @@
 # service-metadata-example
-A metadata example repository for metadata-service.
+
+Example metadata administered via [metadata-service](https://github.com/Interhyp/metadata-service).

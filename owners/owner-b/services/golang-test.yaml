@@ -1,0 +1,13 @@
+quicklinks:
+    - url: /some-test
+      title: Some Test
+      description: Just a quicklink test.
+repositories:
+    - golang-test/implementation
+    - golang-test/helm-deployment
+alertTarget: somebody@domain.com
+developmentOnly: true
+operationType: WORKLOAD
+requiredScans:
+    - SAST
+    - SCA

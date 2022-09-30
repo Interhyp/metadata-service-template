@@ -1,0 +1,13 @@
+url: ssh://git@domain.com:7999/ER/some-other-test-repository-2.git
+mainline: master
+generator: empty
+unittest: false
+configuration:
+    commitMessageType: DEFAULT
+    requireIssue: true
+    requireSuccessfulBuilds: 1
+    webhooks:
+        pipelineTrigger: true
+    approvers:
+        test-owner-a:
+            - somebody

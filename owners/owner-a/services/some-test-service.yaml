@@ -1,0 +1,10 @@
+quicklinks: []
+repositories:
+    - some-test-service/implementation
+    - some-test-service/helm-deployment
+alertTarget: somebody@domain.com
+developmentOnly: false
+operationType: WORKLOAD
+requiredScans:
+    - SAST
+    - SCA
